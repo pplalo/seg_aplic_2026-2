@@ -34,3 +34,18 @@
    >   ciberespacio.
    > - ✅*Tecnologías emergentes*: centrada en la inteligencia artificial y
    >   la computación cuántica…
+4. `2026.02.12`
+   - Seguridad informática *capa a capa*. Textos introductorios (y bastante
+     equivalentes):
+     - [7 Layers of Cybersecurity Explained: A Complete Guide](https://axiomq.com/blog/7-layers-of-cybersecurity-explained-a-complete-guide/)
+     - [Defense in Depth – The Layered Approach to Cybersecurity](https://cisotimes.com/defense-in-depth-the-layered-approach-to-cybersecurity/)
+     - [What is layered security? A complete guide](https://www.comparitech.com/antivirus/what-is-layered-security/)
+   - Artculo para revisar más a detalle: [A layered security architecture:
+     Design issues](http://martinolivier.com/open/lasa.pdf) (Tillwick,
+     Olivier 2004) presenta el tema, divide en “flujos de trabajo” y
+     “servicios de seguridad”, presenta tabla detallando qué servicios
+     están relacionados con cuáles capas y ante qué supuestos.
+   - Dejo referencia específica para los interesados en IoT y redes
+     móviles: [Physical Layer Security in Wireless Networks: A
+     Tutorial](https://ieeexplore.ieee.org/iel5/7742/5751283/05751298.pdf)
+     (Shiu, Chang, Wu, Huang, Chen 2011).
