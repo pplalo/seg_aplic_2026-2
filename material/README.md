@@ -1,38 +1,61 @@
-# Material de cursado
+# Temario del curso
 
-## Febrero
+Presento aquí el _temario formal_ del curso, **a sabiendas** de que
+probablemente no lo sigamos a detalle (sino que busquemos responder a las
+necesidades e inquietudes del grupo). Para ver el material que
+_efectivamente_ vimos en clase, vean la “bitácora” mes a mes:
 
-1. `2026.02.03`: Descripción general del curso: [Presentación del
-   curso](./febrero/presentacion.pdf)
-2. `2026.02.05`: Primer acercamiento: Seguimos una _vieja_ presentación
-   mía (modificada por última vez en 2008): [Seguridad en redes: ¿qué es?
-   ¿cómo lograrla?](./febrero/seg_en_redes.pdf) → **¿Qué es la seguridad de la
-   información?** y **Características de un sistema seguro**
-3. `2026.02.10`: Seguimos un poco lo delineado en la introducción del libro
-   [Computer Security: Art and Science (2nd
-   edition)](https://www.pearson.com/en-us/subject-catalog/p/computer-security-art-and-science/P200000000134/9780134097176):
-   - Comenzamos platicando acerca de la _triada de la seguridad_, tambén
-     conocida como los tres principales _aspectos_ o _servicios_ de la
-     seguridad: **Confidencialidad, Integridad y Disponibilidad** (CIA, por
-     sus siglas en inglés).
-   - Caracterización de _amenazas y ataques_:
-     - Fisgoneo (_snooping / eavesdropping / wiretapping_)
-     - Modificación o alteración
-     - Suplantación de identidad
- - Comenzamos a abordar el documento [Securing Cyberspace for Peace:
-   Insights into Cyberthreats and International Security in
-   2025](https://unidir.org/publication/securing-cyberspace-for-peace-insights-into-cyberthreats-and-international-security-in-2025/)
-   presentado recientemente por UNIDIR (ONU). Citando del mensaje con que
-   yo lo recibí de los colegas de [AMCID](https://amcid.org.mx):
-   
-   > Este informe de UNIDIR examina los desarrollos clave en el panorama
-   > global de ciberamenazas en 2025, centrándose en sus implicaciones
-   > para la paz y la seguridad internacionales.  Organizado en tres
-   > secciones interrelacionadas, el informe explora:
-   > - ✅*Ciberamenazas en evolución*: desde los ataques a infraestructuras
-   >   críticas y cadenas de suministro hasta el auge del ransomware.
-   > - ✅ *Actores de ciberamenaza*: examina la creciente difuminación de
-   >   las fronteras entre actores estatales y no estatales en el
-   >   ciberespacio.
-   > - ✅*Tecnologías emergentes*: centrada en la inteligencia artificial y
-   >   la computación cuántica…
+## Bitácora _real_
+
+1. Temas presentados durante el [./febrero.org](mes de febrero)
+2. Temas presentados durante el [./marzo.org](mes de marzo)
+3. Temas presentados durante el [./abril.org](mes de abril)
+4. Temas presentados durante el [./mayo.org](mes de mayo)
+
+## *Unidad 1*: Introducción a la seguridad de la información
+
+   1. ¿Qué es seguridad de la información?
+   2. Características de un sistema seguro
+   3. Propiedades de la seguridad de la información
+   4. Seguridad informática capa a capa
+   5. Evolución de los retos de seguridad informática sobre el desarrollo
+      histórico de la computación
+
+## *Unidad 2*: El panorama de la seguridad informática hoy
+
+   1. Modelos de riesgo / Modelos de ataque
+   2. Manejo y respuesta a vulnerabilidades
+   3. Gestión de permisos y privilegios
+      1. Principio del menor privilegio
+   4. Bases de datos de vulnerabilidades y debilidades
+      1. CVE — Common Vulnerabilities and Exposure
+      2. CWE — Common Weakness Enumeration
+
+## *Unidad 3*: Tipos de ataque
+
+   1. Denegación de servicio (DoS, DDoS, amplificación, reflexión)
+   2. Desbordamientos (de buffer, de stack, de enteros)
+   3. Inyecciones (de cadenas, SQL, objetos, código, solicitudes)
+   4. Cruce de límites de confianza (XSS, CSRF)
+   5. Basados en codificación
+   6. Algoritmos débiles de cifrado
+
+## *Unidad 4*: Prácticas de programación segura
+
+   1. Principios de diseño seguro
+   2. Prácticas seguras de programación
+      1. Estándares y convenciones
+      2. Manejo seguro de datos
+      3. Manejo de errores
+      4. Manejo de información sensible (contraseñas / datos personales)
+      5. Gestión de dependencias
+   3. Evolución de los lenguajes de programación en lo relativo a la
+      seguridad
+      1. Gestión de la memoria
+      2. Inmutabilidad
+      3. Sistemas de tipos fuertes
+   4. Consideraciones de versionado y mantenibilidad
+      1. Sistemas de gestión de código
+      2. CI/CD
+      3. Análisis estático / dinámico
+   5. El desarrollo y el ciclo de vida de los sistemas (/DevSecOps/)
