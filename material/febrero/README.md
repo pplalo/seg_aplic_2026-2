@@ -67,10 +67,6 @@
 	   de protección. ACLs. Seguridad como _requisito de diseño_. Primer
 	   virus teórico → Creeper.
 
-     - _1980s_: Cómputo personal, LANs, BBSes. 1988: Morris. Viruses →
-       Brain, Jerusalem, Stoned. Sistemas operativos personales _sin
-       concepto de protección_. Equipos CERT/CC.
-
    Algunas lecturas para revisar en clase o posteriormente:
    - [The First Computer Virus of Bob
      Thomas](https://www.historytools.org/inventions/the-first-computer-virus-of-bob-thomas):
@@ -86,3 +82,42 @@
    - Fred Cohen escribió un libro en 1990, que está completo disponible en
      su sitio, llamado [A Short Course on Computer
      Viruses](https://all.net/books/virus/SCVirusOCR.pdf)
+6. `2026.02.18`
+   - Podemos continuar con el desarrollo histórico:
+     - _1980s_: Cómputo personal, LANs, BBSes. 1988: Morris. Viruses →
+       Brain, Jerusalem, Stoned. Sistemas operativos personales _sin
+       concepto de protección_. Equipos CERT/CC.
+     - 1990s :: Cómputo personal en Internet. Comercialización /
+       monetización. Virus/gusanos aprovechando /ingeniería
+       social/. Popularización de DoS como ataque. Inyecciones SQL.
+
+       *Ojo* No era tendencia aún (al igual que los primeros virus),
+       pero... Primer caso de /ransomware/: /AIDS Trojan/ (1989)
+     - 2000s :: Profesionalización y monetización del
+       malware. Botnets. Cruce de límites→XSS/CSRF. /OWASP Top 10/
+       (2004). /Defensa en profundidad/.
+     - Actualidad ::
+       Fragmentación del perímetro. Profundización de expresiones de
+       /ingeniería social/. Ransomware. Exfiltraciones masivas de datos /en
+       la nube/ (→ ¿cuál es tu perímetro?)
+   - Otros temas _de actualidad_ que han salido en los últimos días, para
+     comentar:
+	 - De LWN.net: [Do androids dream of accepted pull
+       requests?](https://lwn.net/SubscriberLink/1058643/7a5ba4f8719fb3eb/);
+       de OSNews: [Why do I not use AI at
+       OSNews](https://www.osnews.com/story/144405/why-do-i-not-use-ai-at-osnews/)
+
+       Ahora que los _LLMs agénticos_ se han puesto de moda... El proyecto
+       _matplotlib_ (biblioteca de visualización de Python) recibió un
+       _pull request_ que, a juicio del desarrollador Scott Shambaugh, era
+       de una calidad identificable como generada por LLM, y lo
+       rechazó. Pero se trataba de una “contribución” hecha por
+       [OpenClaw](https://openclaw.ai/), un LLM agéntico. Y OpenClaw [se
+       defendió acusando a Shambaugh de _discriminar en su
+       contra_](https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-gatekeeping-in-open-source-the-scott-shambaugh-story.html).
+
+	   Un detalle irónico más: [Ars Technica publicó un artículo cubriendo
+       este
+       episodio](https://web.archive.org/web/20260213203945/https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/),
+       pero entre las citas del _blog_ de Shambaugh que utilizan, _hay
+       varias que no provienen del blog, sino que son _alucinadas_ por LLM.
