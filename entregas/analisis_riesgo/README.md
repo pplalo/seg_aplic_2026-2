@@ -47,8 +47,8 @@ Analiza tu escenario utilizando la lógica de **Failure Mode and Effects
 Analysis**. Identifica:
 
 *   **Modos de fallo:** ¿Qué puede salir mal en las tareas concretas?
-    (Ej. en una mudanza: "se rompe un mueble", "el camión no llega", "se
-    pierde una caja").
+    (Ej. en una mudanza: “se rompe un mueble”, “el camión no llega”, “se
+    pierde una caja”).
 *   **Causas:** ¿Por qué ocurriría ese fallo?
 *   **Efectos inmediatos:** ¿Qué pasa justo después del fallo?
 
@@ -58,17 +58,17 @@ Ahora analiza el **mismo** escenario, pero con la mentalidad de OCTAVE:
 
 *   **Identifica el/los activos críticos:** ¿Qué es lo más valioso que hay
     que proteger en este proceso? No son cosas técnicas. (Ej. en la
-    mudanza: "La colección de discos de vinilo heredada", "El bienestar de
-    la mascota durante el viaje").
+    mudanza: “La colección de discos de vinilo heredada”, “El bienestar de
+    la mascota durante el viaje”).
 *   **Contenedores:** ¿Dónde están esos activos? ¿Quién tiene acceso a
     ellos?
 *   **Escenarios de preocupación:** Piensa en amenazas, no solo
-    fallos. (Ej. "Que el vecino se lleve una caja por error", "Que el perro
-    se escape durante la carga", "Que los discos se deformen por el calor
-    dentro del camión").
-*   **Impacto:** ¿Cuál sería el impacto real? (Ej. "Pérdida sentimental
-    irreparable", "Multa por extravío de mascota", "Gastar más dinero en
-    reemplazar lo dañado").
+    fallos. (Ej. “Que el vecino se lleve una caja por error”, “Que el perro
+    se escape durante la carga”, “Que los discos se deformen por el calor
+    dentro del camión”).
+*   **Impacto:** ¿Cuál sería el impacto real? (Ej. “Pérdida sentimental
+    irreparable”, “Multa por extravío de mascota”, “Gastar más dinero en
+    reemplazar lo dañado”).
 
 **4. Entregable:**
 
@@ -78,7 +78,7 @@ Un documento breve (2-3 páginas) que contenga:
 *   **Tabla FMEA** con fallos, causas y efectos.
 *   **Perfil OCTAVE** con activos, contenedores, escenarios de amenaza e
     impacto cualitativo.
-*   **Reflexión final** ¿Qué diferencias encuentras entre la "fotografía"
+*   **Reflexión final** ¿Qué diferencias encuentras entre la “fotografía”
     que da FMEA y la que da OCTAVE? ¿Cuál de los dos te ayudaría más a
     *decidir* dónde poner atención (o recursos) si tuvieras que repetir el
     proceso?
