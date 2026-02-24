@@ -7,3 +7,4 @@ de éste directorio. Los archivos deben generarse debajo de
 `/intereses/DeTalFulano/`.
 
 1. `2026.02.03`: [Intereses y expectativas para la materia](./intereses/)
+2. `2026.03.03`: [Análisis de riesgo: FMEA y Octave](./analisis_riesgo/README.md)
