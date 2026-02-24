@@ -1,5 +1,7 @@
 # Material cursado durante el mes de febrero
 
+## _Unidad 1_: Introducción a la seguridad de la información
+
 1. `2026.02.03`: Descripción general del curso: [Presentación del
    curso](./febrero/presentacion.pdf)
 2. `2026.02.05`: Primer acercamiento: Seguimos una _vieja_ presentación
@@ -82,6 +84,7 @@
    - Fred Cohen escribió un libro en 1990, que está completo disponible en
      su sitio, llamado [A Short Course on Computer
      Viruses](https://all.net/books/virus/SCVirusOCR.pdf)
+
 6. `2026.02.18`
    - Podemos continuar con el desarrollo histórico:
      - _1980s_: Cómputo personal, LANs, BBSes. 1988: Morris. Viruses →
@@ -121,3 +124,30 @@
        episodio](https://web.archive.org/web/20260213203945/https://arstechnica.com/ai/2026/02/after-a-routine-code-rejection-an-ai-agent-published-a-hit-piece-on-someone-by-name/),
        pero entre las citas del _blog_ de Shambaugh que utilizan, _hay
        varias que no provienen del blog, sino que son _alucinadas_ por LLM.
+
+## _Unidad 2_: El panorama de la seguridad informática hoy
+
+1. `2026.02.24`
+   - _Modelos de riesgo_
+
+     Acercamiento general: Modelos de evaluación de riesgo. [Algunos
+     apuntadores: 9 Popular Risk Assessment Models in Risk
+     Management](https://pmstudycircle.com/risk-assessment-models/).
+
+     Específico en seguridad informática: [NIST SP 800-12
+     Cap.7](https://csrc.nist.rip/publications/nistpubs/800-12/800-12-html/chapter7-printable.html),
+     [NIST SP 800-30
+     Rev. 1](https://csrc.nist.gov/pubs/sp/800/30/r1/final).
+
+	 Los procesos de evaluación y análisis de estos documentos de NIST SP
+     800 son muy completos, pero también demasiado “pesados” ⇒ metodología
+     OCTAVE (/Operationally Critical Threat, Asset and Vulnerability
+     Evaluation/; Caralli, R. A., Stevens, J. F., Young, L. R., & Wilson,
+     W. R. (2007). Introducing OCTAVE Allegro: Improving the Information
+     Security Risk Assessment Process. Software Engineering Institute,
+     Carnegie Mellon University.), orientada en los activos de información
+     y la organización, orientado a que el proceso se realice internamente
+     (no con auditor extenro), dando prioridad al contexto operativo por
+     sobre la estandarización. [Introducing OCTAVE Allegro: Improving the
+     Information Security Risk Assessment
+     Process](https://www.sei.cmu.edu/library/introducing-octave-allegro-improving-the-information-security-risk-assessment-process/).
