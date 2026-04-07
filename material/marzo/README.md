@@ -143,7 +143,9 @@
       p.ej. [CWE-1076](https://cwe.mitre.org/data/definitions/1076.html),
       [CWE-1101](https://cwe.mitre.org/data/definitions/1101.html)).
 
-4. `2026.03.12`
+## Unidad 3: Tipos de ataque
+
+1. `2026.03.12`
 
    **Tipos de ataque**
 
@@ -162,7 +164,7 @@
     - Negación de servicio a puntos únicos de fallo (SPoF) en
       infraestructuras compuestas
 
-5. `2026.03.17`
+2. `2026.03.17`
 
 	Nos adentramos un poco en el mágico mundo de los _desbordamientos_:
 
@@ -177,7 +179,7 @@
       - Concepto de _return oriented programming_ (ROP)
     - Desbordamientos de enteros
 
-6. `2026.03.19`
+3. `2026.03.19`
 
     - Desbordamientos de otros tipos de datos: Tiempo (Y2K, Y2K38...)
 
@@ -188,7 +190,7 @@
       - Escapar las cadenas
 	  - Cadenas preparadas
 
-7. `2026.03.24`
+4. `2026.03.24`
 
     - Inyecciones de SQL (y algunas mitigaciones)
 	  - Cadenas preparadas
@@ -197,7 +199,7 @@
 	  - Inyección de JavaScript, CSS en elementos HTML (_primera
         probadita_)
 
-8. `2026.03.26`
+5. `2026.03.26`
 
     - Ingeniería social como _inyección_ de tipo de contenido
 	  - ¿Cómo se determina el _tipo_ de un archivo?
