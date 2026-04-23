@@ -116,3 +116,98 @@
      Protocol and Application Protocols Using
      TLS](https://arxiv.org/abs/1809.05681)
    
+6. `2026.04.23`
+
+   - _Ataques a la cadena de suministros_ (_“supply chain”_)
+   
+     - Ken Thompson, 1983: _«[Reflections on trusting
+       trust](https://dl.acm.org/doi/pdf/10.1145/358198.358210)»_
+
+	   - 20 años más tarde, el panorama... no es que hubiera mejorado:
+         [Reflections on trusting trust
+         revisited](https://dl.acm.org/doi/pdf/10.1145/777313.777347)
+         (Spinellis, 2003)
+
+       - Debería ser suficiente comparar el resultado de dos compiladores
+         independientes... ¡Pero no! [A Mysterious Hacker Group Is On a
+         Supply Chain Hijacking
+         Spree](https://www.wired.com/story/barium-supply-chain-hackers/)
+         (Greenberg, 2019)
+
+	   - [Reflections on trusting distributed
+         trust](https://dl.acm.org/doi/abs/10.1145/3563766.3564089)
+         (Dauterman et al., 2022)
+
+       - [PwnPilot: Reflections on Trusting Trust in the Age of Large
+         Language Models and AI Code
+         Assistants](https://ieeexplore.ieee.org/abstract/document/10487488)
+         (PwnPilot: Reflections on Trusting Trust in the Age of Large
+         Language Models and AI Code Assistants, 2023)
+
+     - Primer ataque conocido: Suplantación de PKZIP en BBSes
+       (1990.05.12). [Carta de aviso de
+       PKWare](https://mirrors.apple2.org.za/www.textfiles.com/bbs/KEELYNET/UNCLASS/warning.asc).
+       - Incluía suplantación de identidad contra la verificación de
+         firmas: PKZIP Auto-Verification Feature..
+       - Otro caso similar (1995):
+         [Trojan.Win32.PKZ300b](https://threats.kaspersky.com/en/threat/Trojan.Win32.PKZ300b/)
+
+     - Ataques a cajeros automáticos (ATMs): [Tyupkin: manipulating ATM
+       machines with
+       malware](https://securelist.com/tyupkin-manipulating-atm-machines-with-malware/66988/)
+       (Kaspersky SecureList, 2014),
+       [GreenDispenser](https://www.proofpoint.com/us/threat-insight/post/Meet-GreenDispenser)
+       (Thoufique Haq, 2015)
+
+     - 2020: Filtrado de datos del gobierno de EUA con Solarwinds, mediante
+       la consola de administración de red _“Orion“_
+	   - [SolarWinds, Probably Hacked by Russia, Serves White House,
+         Pentagon,
+         NASA](https://www.newsweek.com/solar-winds-probably-hacked-russia-serves-white-house-pentagon-nasa-1554447)
+         (Cristina Zhao, Newsweek, 2020)
+       - [Scope of Russian Hacking Becomes Clear: Multiple U.S. Agencies
+         Were
+         Hit](https://www.nytimes.com/2020/12/14/us/politics/russia-hack-nsa-homeland-security-pentagon.html)
+         (New York Times, 2020)
+       - [Pompeo says Russia 'pretty clearly' behind cyberattack on US, but
+         Trump casts doubts and downplays
+         threat](https://www.usatoday.com/story/news/politics/2020/12/18/russian-cyber-attack-worst-may-yet-come-solarwinds-hacking/3956223001/)
+       - [What is
+         Solorigate](https://www.cybersecurity-insiders.com/what-is-solorigate/)
+         (Naveen Goud, 2021)
+
+     - _Typosquatting_ en NPM: [Massive npm Malware Campaign Leverages
+       Ethereum Smart Contracts To Evade Detection and Maintain
+       Control](https://socket.dev/blog/massive-npm-malware-campaign-leverages-ethereum-smart-contracts)
+       (Pandya et al., 2024). [Algunos de los nombres utilizados en la
+       campaña](https://gist.github.com/masteryoda101/d4e90eb8004804d062bc04cf1aec4bc0).
+
+     - 2024: puerta trasera en _XZ Utils_
+
+	   Uno de los primeros ataques con _sofisticación y planeación_ de
+       varios años. _XZ_ es una biblioteca de compresión LZMA muy
+       ampliamente utilizada en el software libre. Su (único) desarrollador
+       activo, Lasse Collin, no respondía activamente a solicitudes
+       relacionadas con el proyecto. Un desarrollador llamado _Jia Tan_ fue
+       haciendo contribuciones menores entre 2021 y 2024, hasta ganar
+       acceso de _commit_ al proyecto.
+
+	   _Jia Tan_ introdujo una vulnerabilidad _oculta_, no en el código en
+       Git, sino que en el _tarball_ con la distribución oficial. Permite,
+       interactuando con _OpenSSH_, ganar acceso de root sin pasar por una
+       etapa de autenticación.
+
+	   El desarrollador de Microsoft y PostgreSQL Andres Freund detectó
+       pequeñas desviaciones del tiempo normal en una serie de pruebas, lo
+       que lo llevó a encontrar esta anomalía. La vulnerabilidad
+       introducida estuvo presente sólo en las versiones 5.6.0 y 5.6.1, que
+       no llegaron a ninguna distribución estable de Linux (aunque sí a la
+       rama de desarrollo de varias distribuciones).
+
+     - 2026: eScan updates. La compañíá de antivirus _eScan_ fue
+       comprometida; los atacantes se hicieron del control de servidores
+       recionales de actualización, dando actualizaciones contaminadas a los
+       clientes. El ataque se centró en Asia sud-oriental, y duró poco más
+       de una hora. [Threat Bulletin: Critical eScan Supply Chain
+       Compromise](https://www.morphisec.com/blog/critical-escan-threat-bulletin/)
+       (Gorelik, 2026)
